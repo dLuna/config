@@ -1,0 +1,39 @@
+*font:                          fixed
+*visualBell:                    true
+*BorderWidth:                   0
+
+Netscape*installColormap:       Yes
+Netscape*useStderrDialog:       False
+Netscape*useStdoutDialog:       False
+Netscape*BorderWidth:           0
+Netscape*blinkingEnabled:       False
+
+Emacs.font: FreeMono-10
+Emacs*Geometry:                 162x71+485+0
+emacs.menuBar: 			off
+emacs.toolBar: 			off
+emacs.verticalScrollBars: 	off
+
+xterm*reverseWrap:              true
+xterm*scrollBar:                false
+xterm*saveLines:                10000
+! De följande fyra raderna är de som fixar svenska tecken till xterm
+xterm*fontMenu*font2*Label:     Tiny
+xterm*VT100*font2:              nil2
+xterm*fontMenu*font1*Label:     Swedish
+xterm*VT100*font1:              swedish
+xterm*background:                    #000000
+xterm*foreground:                    #ffffee
+
+rxvt*geometry:                 80x77
+rxvt*scrollBar:                off
+rxvt*saveLines:                0
+*background:                    #000000
+*foreground:                    #ffffee
+*Background:                    #000000
+*Foreground:                    #ffffee
+Emacs*background:                    #000000
+Emacs*foreground:                    #ffffee
+
+! Slippa fmfilesvisited i hemmet
+Maker.filesRecentlyVisitedPath: /home/luna/.openedfmfiles

@@ -1,0 +1,20 @@
+################################################################################
+# Defaults
+
+escape ^Zz
+
+# Status bar
+hardstatus alwayslastline
+hardstatus string "%?%c %?%?%H%?%? %n%?%?*%f%?%? %t%? %h%?"
+termcapinfo xterm "hs@"
+
+# Turn off annoyment
+nethack off
+startup_message off
+
+# Key bindings
+bind ^g
+bind o focus
+
+defscrollback 100000
+scrollback 100000
