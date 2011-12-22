@@ -7,6 +7,11 @@
 ;; (setq ring-bell-function (lambda ()
 ;;                        (call-process "ratpoison" nil nil nil "-c"
 ;;                        "echo ding")))
+;;
+;; You can change the encoding to use for the file when saving using
+;; 'C-x C-m f'.  You can also force this immediately by using 'C-x C-m
+;; c <encoding> RET C-x C-w RET'.  You can force Emacs to read a file
+;; in a specific encoding with 'C-x RET c C-x C-f'.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Load default.el first.
@@ -152,6 +157,7 @@
 (add-to-list 'auto-mode-alist '("\\.yaws$" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.app$" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.conf$" . erlang-mode))
+(add-to-list 'auto-mode-alist '("\\.compilation$" . compilation-minor-mode))
 ;(setq erlang-indent-level 2)
 (add-hook 'erlang-new-file-hook 'tempo-template-erlang-normal-header)
 (condition-case nil (load "erlang_templates.el") (file-error))
