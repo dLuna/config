@@ -1,3 +1,6 @@
 [user]
 	name = Daniel Luna
 	email = daniel@lunas.se
+[alias]
+        lol = log --graph --decorate --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
+        lola = log --graph --decorate --abbrev-commit --date=relative --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
