@@ -117,9 +117,7 @@ alias     pu='pushd'
 alias  rwget='noglob wget -nc -p --no-parent -r -l0'
 alias      t='date +"%H.%M"'        # time in HH.MM format         [2001­07­05]
 alias  unzip='noglob unzip'         # don't use globs with unzip   [2001­10­16]
-alias    utf='file lib/*/src/*erl lib/*/include/*hrl \
-              lib/site/priv/docroot/*yaws lib/Makefile \
-              lib/*/Makefile doc/*txt | grep "UTF"'
+alias    utf='file apps/*/src/*erl apps/*/include/*hrl Makefile | grep "UTF"'
 alias   word='sed `perl -e "print int rand(99999)"`"q;d" /usr/share/dict/words'
 
 alias   aoeu='xmodmap ~/.Xmodmap.se'
