@@ -9,7 +9,7 @@ Netscape*BorderWidth:           0
 Netscape*blinkingEnabled:       False
 
 Emacs.font: FreeMono-10
-Emacs*Geometry:                 162x71+485+0
+Emacs*Geometry:                 162x80-122+0
 emacs.menuBar: 			off
 emacs.toolBar: 			off
 emacs.verticalScrollBars: 	off
