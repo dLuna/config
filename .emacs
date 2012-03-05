@@ -8,6 +8,7 @@
 ;;                        (call-process "ratpoison" nil nil nil "-c"
 ;;                        "echo ding")))
 ;;
+;; unicode, utf-8, character encoding:
 ;; You can change the encoding to use for the file when saving using
 ;; 'C-x C-m f'.  You can also force this immediately by using 'C-x C-m
 ;; c <encoding> RET C-x C-w RET'.  You can force Emacs to read a file
