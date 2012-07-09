@@ -226,6 +226,7 @@
                       (message "git-grep: %s doesn't look like a git working tree; searching from %s instead" default-directory root)))))
       (grep (format "GIT_PAGER='' git grep %s -e %s -- %s" git-grep-switches regexp root)))))
 (global-set-key (kbd "C-x ?") 'git-grep)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Kreditor
 (defun kfind-at (path word)
@@ -246,6 +247,7 @@
 (global-set-key (kbd "C-.") 'next-error)
 (global-set-key (kbd "C-,") 'previous-error)
 (global-set-key "\C-zf" 'kfind)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Muse
 (let ((f "~/luna/www/muse.el"))
@@ -254,13 +256,16 @@
 (let ((f "~/luna/jci/nio/nyhetsbrev/muse.el"))
   (when (file-exists-p f)
     (load-file f)))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; promela
 (autoload 'promela-mode "promela.el" "" t)
 (add-to-list 'auto-mode-alist '("\\.pr$" . promela-mode))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; smarkets sql
 (add-to-list 'auto-mode-alist '("\\.migration$" . sql-mode))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; jabber
 (when (locate-library "jabber")
@@ -277,6 +282,7 @@
   (add-hook 'jabber-alert-message-hooks 'jabber-message-notify)
   ;;(add-to-list 'jabber-alert-message-hooks 'jabber-message-notify)
   )
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; rcirc
 ;; C-h v rcirc-authinfo
@@ -325,11 +331,13 @@
                                      "#spawnfest"))
       ))
   )
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; psvn
 (when (locate-library "psvn")
   (require 'psvn)
 )
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; jinja
 (autoload 'jinja-mode "jinja.el" "" t)
