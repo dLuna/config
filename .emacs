@@ -7,6 +7,7 @@
 ;; C-x }      -- Enlarge horizontally
 ;; C-x {      -- Shrink horizontally
 ;; C-x -      -- Shrink to fit buffer
+
 ;; (global-set-key "\C-x\C-q" 'toggle-read-only)
 ;; C-x C-e    -- eval-last-sexp
 ;; (setq ring-bell-function (lambda ()
