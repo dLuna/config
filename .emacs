@@ -1,5 +1,8 @@
 ;; Temporary hack until I find a way to get .Xresources to work again
 (set-default-font "Dejavu Sans Mono 10")
+;; the command M-x top-level aborts all levels of recursive edits,
+;; returning immediately to the top-level command reader.
+
 ;; C-x ^      -- Enlarge window
 ;; C-x }      -- Enlarge horizontally
 ;; C-x {      -- Shrink horizontally
