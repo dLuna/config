@@ -164,6 +164,7 @@
 (add-to-list 'auto-mode-alist '("\\.compilation$" . compilation-minor-mode))
 ;(setq erlang-indent-level 2)
 (add-hook 'erlang-new-file-hook 'tempo-template-erlang-normal-header)
+(add-hook 'erlang-mode-hook (lambda () (setq parens-require-spaces nil)))
 (condition-case nil (load "erlang_templates.el") (file-error))
 (when (locate-library "distel")
   (require 'distel)
