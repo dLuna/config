@@ -269,10 +269,10 @@
 ;; /keyword thing ; will boldify the thing
 (when (locate-library "rcirc")
   (require 'rcirc)
-  (setq real-rcirc-nick "luna")
+  (setq real-rcirc-nick "dluna")
   (setq rcirc-nick real-rcirc-nick)
-  ;; (global-set-key "\C-c\C-@" 'rcirc-next-active-buffer)
-  ;; (rcirc-track-minor-mode 1)
+  (global-set-key "\C-c\C-@" 'rcirc-next-active-buffer)
+  (rcirc-track-minor-mode 1)
   ;; M-- C-l fixes stuff
   (add-hook 'rcirc-mode-hook
 	    (lambda ()
@@ -293,6 +293,7 @@
 				   "#rcirc"
 				   "#ratpoison"
 				   "#hcoop"
+                                   "#spawnfest"
 				   ))))
   (let ((f "~/.rcirc-authinfo"))
     (when (file-exists-p f)
@@ -306,10 +307,9 @@
 				     "#2040"
 				     "#ratpoison"
 				     "#hcoop"
-				     "#rcirc"))
-      ("irc.hq.kred" :channels ("#kreditor"
-				"#tech"
-				"#drift"))))
+				     "#rcirc"
+                                     "#spawnfest"))
+      ))
   )
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; psvn
