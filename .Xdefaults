@@ -8,7 +8,8 @@ Netscape*useStdoutDialog:       False
 Netscape*BorderWidth:           0
 Netscape*blinkingEnabled:       False
 
-Emacs.font: FreeMono-10
+!Emacs.font: FreeMono-10
+Emacs.font: Monospace-10
 Emacs*Geometry:                 162x80-122+0
 emacs.menuBar: 			off
 emacs.toolBar: 			off
