@@ -82,6 +82,16 @@
 (setq x-select-enable-clipboard t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Themes
+(add-to-list 'load-path "~/.emacs.d/vendor/candy-chain")
+(when (locate-library "color-theme")
+  (require 'color-theme)
+  (require 'candy-chain)
+  (color-theme-initialize)
+  (color-theme-candy-chain)
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Language environment
 ;; (set-terminal-coding-system 'iso-8859-1)
 ;; (setq default-buffer-file-coding-system 'iso-8859-1)
