@@ -1,3 +1,5 @@
+;; Temporary hack until I find a way to get .Xresources to work again
+(set-default-font "Dejavu Sans Mono 10")
 ;; C-x ^      -- Enlarge window
 ;; C-x }      -- Enlarge horizontally
 ;; C-x {      -- Shrink horizontally
