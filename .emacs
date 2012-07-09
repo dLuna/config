@@ -75,6 +75,7 @@
 (setq-default mouse-yank-at-point t)
 (put 'overwrite-mode 'disabled t)
 (setq next-line-add-newlines nil) ; only needed for version < 21
+(setq x-select-enable-clipboard t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Language environment
