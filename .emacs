@@ -335,6 +335,13 @@
 (autoload 'jinja-mode "jinja.el" "" t)
 (add-to-list 'auto-mode-alist '("\\.jinja$" . jinja-mode))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; org-mode
+;; C-x C-t/t -> toggle TODO/DONE/nothing
+;; C-ENTER -> new item at the same level as current item
+;; M-leftarrow/M-rightarrow -> move current line/marked area up/down one level
+(global-set-key (kbd "C-c t") 'org-todo)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Modes
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
