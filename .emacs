@@ -331,6 +331,16 @@
 ;; C-ENTER -> new item at the same level as current item
 ;; M-leftarrow/M-rightarrow -> move current line/marked area up/down one level
 (global-set-key (kbd "C-c t") 'org-todo)
+;; (define-key global-map "\C-cl" 'org-store-link)
+;; (define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;; SQL-stuff: M-x sql-postgres
+;; \d TABLENAME;  -- types and names and stuff
+;; \df oplog*
+;; \sf oplog_get
+;; \sf oplog_get_from(uuid, integer)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Modes
