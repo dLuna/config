@@ -301,36 +301,17 @@
 		   1000000)))
   ;; Include date in time stamp.
   (setq rcirc-time-format "%Y-%m-%d %H:%M ")
-  (setq rcirc-default-server "irc.hq.kred")
-  ;; C-u M-x rcirc
-  ;;(setq rcirc-default-server "localhost")
-  (setq rcirc-startup-channels-alist
-	'(("\\.hq\\.kred$" . ("#kreditor"
-			      "#tech"
-			      "#drift"))
-	  ("localhost$" . ("#kreditor"))
-	  ("\\.freenode\\.net$" . ("#erlang"
-				   "#2040"
-				   "#rcirc"
-				   "#ratpoison"
-				   "#hcoop"
-                                   "#spawnfest"
-				   ))))
   (let ((f "~/.rcirc-authinfo"))
     (when (file-exists-p f)
       (load-file f)))
-  (defun rcirc-nickserv-msg (cmd)
-    (rcirc-send-message process "nickserv"
-			(concat cmd " " real-rcirc-nick " "
-				rcirc-passwd)))
   (setq rcirc-server-alist
     '(("irc.freenode.net" :channels ("#erlang"
 				     "#2040"
 				     "#ratpoison"
 				     "#hcoop"
 				     "#rcirc"
-                                     "#spawnfest"))
-      ))
+                                     "#spawnfest"
+                                     "#rebar"))))
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
