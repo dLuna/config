@@ -3,6 +3,11 @@
 ;; the command M-x top-level aborts all levels of recursive edits,
 ;; returning immediately to the top-level command reader.
 
+;; M-x find-name-dired: prompt for a root directory and a filename pattern.
+;; Press t to "toggle mark" for all files found.
+;; Press Q for "Query-Replace in Files...":
+;; prompted for query/substitution regexps.
+
 ;; C-x ^      -- Enlarge window
 ;; C-x }      -- Enlarge horizontally
 ;; C-x {      -- Shrink horizontally
