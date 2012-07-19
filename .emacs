@@ -314,6 +314,7 @@
     '(("irc.freenode.net" :channels (
                                      "#2040"
                                      "#erlang"
+                                     "#erlounge"
                                      "#hcoop"
                                      "#ratpoison"
                                      "#rcirc"
