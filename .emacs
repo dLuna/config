@@ -310,14 +310,15 @@
     (when (file-exists-p f)
       (load-file f)))
   (setq rcirc-server-alist
-    '(("irc.freenode.net" :channels ("#erlang"
+    '(("irc.freenode.net" :channels (
 				     "#2040"
-				     "#ratpoison"
 				     "#hcoop"
+				     "#ratpoison"
 				     "#rcirc"
+                                     "#erlang"
+                                     "#rebar"
                                      "#spawnfest"
-                                     "#rebar"))))
-  )
+                                     )))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; psvn
