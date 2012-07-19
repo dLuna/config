@@ -312,11 +312,11 @@
       (load-file f)))
   (setq rcirc-server-alist
     '(("irc.freenode.net" :channels (
-				     "#2040"
-				     "#hcoop"
-				     "#ratpoison"
-				     "#rcirc"
+                                     "#2040"
                                      "#erlang"
+                                     "#hcoop"
+                                     "#ratpoison"
+                                     "#rcirc"
                                      "#rebar"
                                      "#spawnfest"
                                      )))))
