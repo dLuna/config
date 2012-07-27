@@ -135,10 +135,10 @@
 ;; END Hunter
 
 (setq make-backup-files t)
-;; Put backups in ~/.backup .
-(if (file-directory-p "~/.backup")
-    (setq backup-directory-alist '(("" . "~/.backup")))
-  (message "Directory does not exist: ~/.backup"))
+;; Put backups in ~/.emacs.d/backup
+(if (file-directory-p "~/.emacs.d/backup")
+    (setq backup-directory-alist '(("" . "~/.emacs.d/backup")))
+  (message "Directory does not exist: ~/.emacs.d/backup"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Passwords
