@@ -161,6 +161,7 @@
 ;; (setq-default tab-width 4)
 (setq case-fold-search t) ; make searches case insensitive
 (set-cursor-color "white")
+(show-paren-mode t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Font lock mode
