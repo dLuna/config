@@ -297,6 +297,7 @@
 ;; /keyword thing ; will boldify the thing
 (when (locate-library "rcirc")
   (require 'rcirc)
+  (setq rcirc-log-flag t)
   (setq rcirc-default-nick "dluna")
   (setq real-rcirc-nick "dluna")
   (setq rcirc-nick real-rcirc-nick)
