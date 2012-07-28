@@ -131,7 +131,7 @@ if [[ $(uname) == SunOS ]]; then
     alias ls='ls -F'
 elif whence -p gls >& /dev/null; then
     alias ls='gls --color=auto'
-elif ls --version | grep -q 'Free Software Foundation'; then
+elif ls --version |& grep -q 'Free Software Foundation'; then
     alias ls='ls --color=auto'
 elif [[ $(uname) == FreeBSD ]]; then
     alias ls='ls -G'
