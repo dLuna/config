@@ -1,6 +1,6 @@
 typeset -U path fpath manpath
 path=(~/devel/otp/bin ~/usr/bin ~/usr/RealPlayer $path)
-fpath=(~/.zsh/functions $fpath)
+fpath=(~/.zsh $fpath)
 manpath=(~/usr/man $manpath)
 
 #export LANG=C
