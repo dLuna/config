@@ -164,6 +164,14 @@
 (show-paren-mode t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Ace jump mode
+(add-to-list 'load-path "~/.emacs.d/vendor/ace-jump-mode")
+(when (locate-library "ace-jump-mode")
+  (require 'ace-jump-mode)
+  (define-key global-map (kbd "C-0") 'ace-jump-mode)
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Font lock mode
 (require 'font-lock)
 (global-font-lock-mode t)
