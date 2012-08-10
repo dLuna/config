@@ -111,6 +111,7 @@ alias       e='emacs'
 #alias    grp='grep $* **/*rl **/*yaws' # HOW?
 alias     nd='mkdir `date -I` && cd `date -I`'
 alias     ng='noglob '              # shorter noglob command       [2001­08­16]
+alias   open='xdg-open'             # remember the command name    [2012-08-09]
 alias     po='popd'
 alias    psu='ps -u$USER'           # all my processes             [2003-12-16]
 alias     pu='pushd'
