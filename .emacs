@@ -330,7 +330,7 @@
                                      "#ratpoison"
                                      "#rcirc"
                                      "#rebar"
-                                     "#riak"
+                                     ;; "#riak"
                                      "#riak_core"
                                      "#spawnfest"
                                      )))))
