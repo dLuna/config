@@ -189,7 +189,6 @@
 (add-to-list 'auto-mode-alist '("\\.[eh]rl$" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.yaws$" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.app$" . erlang-mode))
-(add-to-list 'auto-mode-alist '("\\.conf$" . erlang-mode))
 (add-to-list 'auto-mode-alist '("reltool\\.config$" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.compilation$" . compilation-minor-mode))
 ;(setq erlang-indent-level 2)
