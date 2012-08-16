@@ -89,8 +89,8 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Themes
-(add-to-list 'load-path "~/.emacs.d/vendor/candy-chain")
-(when (locate-library "color-theme")
+(add-to-list 'load-path "~/.emacs.d/vendor/candy-chain/")
+(when (locate-library "color-theme" "candy-chain")
   (require 'color-theme)
   (require 'candy-chain)
   (color-theme-initialize)
