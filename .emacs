@@ -162,6 +162,11 @@
 (setq case-fold-search t) ; make searches case insensitive
 (set-cursor-color "white")
 (show-paren-mode t)
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+(setq uniquify-separator "/")
+(setq uniquify-after-kill-buffer-p t) ;rename after killing uniquify
+(setq uniquify-ignore-buffers-re "^\\*")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Ace jump mode
