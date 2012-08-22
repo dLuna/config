@@ -1,5 +1,10 @@
 typeset -U path fpath manpath
-path=(~/devel/otp/bin ~/usr/bin ~/usr/RealPlayer $path)
+if [[ $(uname) == Darwin ]]; then
+    path=(~/devel/otp/bin ~/usr/bin /opt/local/bin /opt/local/sbin
+        /Applications/Emacs.app/Contents/MacOS/ $path)
+else
+    path=(~/devel/otp/bin ~/usr/bin ~/usr/RealPlayer $path)
+fi
 fpath=(~/.zsh $fpath)
 manpath=(~/usr/man $manpath)
 

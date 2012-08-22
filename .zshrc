@@ -127,6 +127,10 @@ alias   asdf='xmodmap ~/.Xmodmap'
 alias     pu='pushd'
 alias     po='popd'
 
+if [[ $(uname) == Darwin ]]; then
+    alias emacs=Emacs
+fi
+
 # ls
 if [[ $(uname) == SunOS ]]; then
     alias ls='ls -F'
