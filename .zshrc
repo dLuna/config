@@ -151,7 +151,9 @@ alias       watch='watch '          #                              [2003-06-14]
 
 # for safety (make backups if destination already exists)
 alias -g    cp='cp -b'              # back up                      [2002­01­16]
-alias -g    ln='ln -b'              # back up                      [2001­01­16]
+if [[ ! $(uname) == Darwin ]]; then
+    alias -g    ln='ln -b'          # back up                      [2001­01­16]
+fi
 alias     mv='mv -b'              # back up                      [2002­01­16]
 
 typeset -A account                             # "account" associative array
