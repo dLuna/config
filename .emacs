@@ -33,6 +33,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; load-path
 (add-to-list 'load-path "~/lib/emacs/")
+(add-to-list 'load-path "~/Projects/otp/lib/tool/emacs/")
 (add-to-list 'load-path "~/usr/src/distel/elisp/")
 (add-to-list 'load-path "~/usr/src/magit/")
 
