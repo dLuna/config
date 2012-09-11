@@ -1,0 +1,30 @@
+#compdef rebar
+
+_rebar_commands()
+{
+    local -a commands
+    commands=(
+        'compile:Compile all the available source in the project.'
+        'eunit:Perform unit testing using the EUnit application'
+        'doc:Generate documention using the EDoc application'
+        'clean:Remove any generated artifacts from compilation, unit testing, etc.'
+        'check-deps:Check and display to fetched dependencies specified in rebar.config'
+        'create:Create a prototypical project (described by the supplied template)'
+        'create-app:Create a prototypical OTP application (described by the template)'
+        'create-node:Create a prototypical OTP embedded system (described by the template)'
+        'ct:Run common_test suites'
+        'delete-deps:Delete the downloaded source for dependencies specified in rebar.config'
+        'escriptize:Create stand-alone escript executable using .beam-files in ebin directory'
+        'generate:Use the reltool application to construct an embedded system'
+        'generate-upgrade:Build an upgrade package'
+        'get-deps:Retrieve the source for dependencies specified in the rebar.config'
+        'list-deps:List the details of the dependencies specified in the rebar.config'
+        'update-deps:Update the retrieved source for dependencies specified in the rebar.config'
+        'xref:Use the xref application to analyze dependencies'
+    )
+    _describe -t commands 'rebar command' commands
+}
+
+if (( CURRENT == 2)); then
+    _rebar_commands
+fi
