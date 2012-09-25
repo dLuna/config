@@ -332,13 +332,13 @@
                                      "#erlang"
                                      "#erlounge"
                                      "#hcoop"
-                                     "#ratpoison"
+                                     ;; "#ratpoison"
                                      "#rcirc"
                                      "#rebar"
                                      ;; "#riak"
                                      "#riak_core"
                                      "#spawnfest"
-                                     "#upstart"
+                                     ;; "#upstart"
                                      )))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
