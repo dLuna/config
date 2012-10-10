@@ -380,6 +380,8 @@
                                      "#spawnfest"
                                      ;; "#upstart"
                                      )))))
+;; /dim Erlang
+;; /keyword hipe
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; psvn
