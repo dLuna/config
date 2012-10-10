@@ -48,7 +48,7 @@
 (setq ctrl-z-map (make-keymap))
 (global-set-key "\C-z" ctrl-z-map)
 (global-set-key "\C-x\C-z" 'suspend-emacs)
-(global-set-key "\C-c\C-c" 'comment-region)
+;; (global-set-key "\C-c\C-c" 'comment-region)
 (global-set-key "\M-g" 'goto-line)  ; Goto line number
 (global-set-key "\C-h" 'backward-delete-char-untabify)
 (define-key isearch-mode-map "\C-h" 'isearch-delete-char)
