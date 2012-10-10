@@ -252,7 +252,9 @@
          (beg (and (skip-chars-backward "[:alnum:]:_-") (point)))
          (end (and (skip-chars-forward  "[:alnum:]:_-") (point)))
          (txt (buffer-substring beg end))
-         (cml (camelscore txt)))))
+         (cml (camelscore txt)))
+    (if cml (progn (delete-region beg end) (insert cml)))))
+(global-set-key (kbd "C-M-c") 'camelscore-word-at-point)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; magit
