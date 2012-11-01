@@ -62,6 +62,7 @@
 (global-set-key "\C-xw" 'tex-buffer)
 (global-set-key "\C-xg" 'magit-status)
 (global-set-key "\C-zg" 'magit-status)
+(global-set-key "\C-x\C-b" 'ibuffer)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Annoying stuff
