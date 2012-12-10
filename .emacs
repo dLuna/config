@@ -56,6 +56,7 @@
 (global-set-key "\C-zl" 'load-file)
 (global-set-key "\C-zh" 'help)
 (global-set-key "\C-xO" 'previous-multiframe-window)
+(global-set-key "\C-xf" 'ido-open-in-project)
 (global-set-key "\C-zc" 'compile)
 ;; (setq compile-command "cd ../../../ && ./rebar compile")
 (setq compile-command "cd ../../../ && make")
@@ -288,6 +289,36 @@
                       (message "git-grep: %s doesn't look like a git working tree; searching from %s instead" default-directory root)))))
       (grep (format "GIT_PAGER='' git grep %s -e %s -- %s" git-grep-switches regexp root)))))
 (global-set-key (kbd "C-x ?") 'git-grep)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; git related
+(defun ido-open-in-project ()
+  (interactive)
+  (let ((root (vc-git-root default-directory)))
+    (if root
+        (find-file (concat root
+                           (ido-completing-read "Find in project: "
+                                                (get-git-files root)
+                                                :require-match t)))
+        (message "Not in a git repo."))))
+
+(defun get-git-files (dir)
+  (remove-ignored-files
+   (split-string (shell-command-to-string (concat "cd " dir ";" "git ls-files"))
+                 "\n")))
+
+(defun remove-ignored-files (list)
+  (remove-if (lambda (file)
+               (some (lambda (suffix)
+                       (string-suffix-p file suffix))
+                     completion-ignored-extensions))
+             list))
+
+(defun string-suffix-p (str1 str2)
+  "Check if str1 ends with str2"
+  (unless (< (length str1) (length str2))
+    (string= (subseq str1 (- 0 (length str2)))
+             str2)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Kreditor
