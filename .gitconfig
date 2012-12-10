@@ -14,3 +14,6 @@
         lol = log --graph --decorate --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
         lola = log --graph --decorate --abbrev-commit --date=relative --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
         pullr = pull --rebase
+        statsu = status
+        psuh = push
+        up = "!sh -c 'git stash && git pull --rebase && git stash pop'"
