@@ -410,6 +410,7 @@
                                      ;; "#riak"
                                      "#riak_core"
                                      "#spawnfest"
+                                     "#ninenines"
                                      ;; "#upstart"
                                      )))))
 ;; /dim Erlang
