@@ -192,6 +192,11 @@
       '( spaces tabs newline space-mark tab-mark newline-mark))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; domtool
+(when (locate-library "domtool-mode")
+  (require 'domtool-mode))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; erlang
 (add-to-list 'load-path "~/devel/otp/lib/tools/emacs")
 (autoload 'erlang-mode "erlang.el" "" t)
