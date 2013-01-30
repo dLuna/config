@@ -228,3 +228,4 @@ for ((i=1; i<=30; i++)); do     #
 done                            #
 unset i                         #
 
+alias -g HT='apps/**/*.html'
