@@ -17,3 +17,4 @@
         statsu = status
         psuh = push
         up = "!sh -c 'git stash && git pull --rebase && git stash pop'"
+        who = shortlog -sen
