@@ -39,6 +39,10 @@ setopt   interactive_comments
 autoload -U compinit
 compinit -u
 
+# C-w will stop at '/':
+autoload -U select-word-style
+select-word-style bash
+
 # Completion control
 zstyle ':completion:*' use-compctl false
 
