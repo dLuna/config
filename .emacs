@@ -196,6 +196,13 @@
       '( spaces tabs newline space-mark tab-mark newline-mark))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; redspace
+(add-to-list 'load-path "~/.emacs.d/vendor/redspace")
+(when (locate-library "redspace")
+  (require 'redspace-mode)
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; domtool
 (when (locate-library "domtool-mode")
   (require 'domtool-mode))
