@@ -197,10 +197,9 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; redspace
-(add-to-list 'load-path "~/.emacs.d/vendor/redspace")
-(when (locate-library "redspace")
-  (require 'redspace-mode)
-  )
+;; (add-to-list 'load-path "~/.emacs.d/vendor/redspace")
+;; (when (locate-library "redspace")
+;;   (require 'redspace-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; domtool
