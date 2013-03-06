@@ -33,7 +33,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; load-path
 (add-to-list 'load-path "~/.emacs.d/erlang/")
-(add-to-list 'load-path "~/.emacs.d/hcoop/")
+(add-to-list 'load-path "~/.emacs.d/vendor/hcoop/")
 (add-to-list 'load-path "~/Projects/otp/lib/tools/emacs/")
 (add-to-list 'load-path "~/usr/src/distel/elisp/")
 (add-to-list 'load-path "~/usr/src/magit/")
