@@ -463,8 +463,11 @@
 ;;; End of Modes
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (custom-set-variables
- '(jabber-account-list `(("daniel.luna@smarkets.com/emacs" (:password . ,jabber-passwd) (:connection-type . starttls))))
- '(starttls-extra-arguments (quote ("--insecure")))
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(jabber-account-list (\` (("daniel.luna@smarkets.com/emacs" (:password \, jabber-passwd) (:connection-type . starttls)))))
  '(jabber-auto-reconnect t)
  '(jabber-avatar-cache-directory "~/.emacs.d/.jabber-avatars/")
  '(jabber-chat-buffer-show-avatar nil)
@@ -476,11 +479,8 @@
  '(jabber-roster-line-format "%c %-25n %u %-8s  %S")
  '(jabber-show-offline-contacts nil)
  '(jabber-vcard-avatars-publish nil)
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(safe-local-variable-values (quote ((c-hanging-comment-ender-p) (erlang-indent-level . 4) (erlang-indent-level . 2)))))
+ '(safe-local-variable-values (quote ((js-indent-level . 2) (js2-basic-offset . 2) (c-hanging-comment-ender-p) (erlang-indent-level . 4) (erlang-indent-level . 2))))
+ '(starttls-extra-arguments (quote ("--insecure"))))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
