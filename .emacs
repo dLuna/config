@@ -210,6 +210,9 @@
 ;; erlang
 (add-to-list 'load-path "~/devel/otp/lib/tools/emacs")
 (autoload 'erlang-mode "erlang.el" "" t)
+(add-hook 'erlang-mode-hook (lambda ()
+                              (interactive)
+                              (column-marker-3 75)))
 (add-to-list 'auto-mode-alist '("\\.[eh]rl$" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.yaws$" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.app$" . erlang-mode))
