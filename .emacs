@@ -226,19 +226,20 @@
   (require 'distel)
   (distel-setup)
   (setq erl-nodename-cache 'smcore\@spawn)
-  ;; (defun vc-git-inferior-erlang ()
-  ;;   (interactive)
-  ;;   ;; TODO - make it automatically set up the node name and cookie, too
-  ;;   (inferior-erlang (format "cd %s && make run"
-  ;;                            (or (vc-git-root default-directory)
-  ;;                                "~/code/ubiquity"))))
-  ;; (setq erlang-shell-display-function 'vc-git-inferior-erlang-run-or-select)
-  ;; (defun vc-git-inferior-erlang-run-or-select ()
-  ;;   (interactive)
-  ;;   (if (null (inferior-erlang-running-p))
-  ;;       (vc-git-inferior-erlang)
-  ;;     (inferior-erlang-display-buffer t)))
-  ;; (setq erlang-shell-function 'vc-git-inferior-erlang)
+  (defvar *default-project-path* "~/devel/scalemail")
+  (defun vc-git-inferior-erlang ()
+    (interactive)
+    ;; TODO - make it automatically set up the node name and cookie, too
+    (inferior-erlang (format "cd %s && make run"
+                             (or (vc-git-root default-directory)
+                                 *default-project-path*))))
+  (setq erlang-shell-display-function 'vc-git-inferior-erlang-run-or-select)
+  (defun vc-git-inferior-erlang-run-or-select ()
+    (interactive)
+    (if (null (inferior-erlang-running-p))
+        (vc-git-inferior-erlang)
+      (inferior-erlang-display-buffer t)))
+  (setq erlang-shell-function 'vc-git-inferior-erlang)
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
