@@ -219,7 +219,7 @@ alias -g TT='|iconv -futf-8 -tlatin1' # utf-8 to latin1            [2008-07-28]
 alias -g  U='|sort |uniq'     # unique (U0=no pre­sort)            [2002­08­15]
 alias -g U0='|uniq'           #                                    [2002­01­10]
 # V
-alias -g  W='apps/**/*{html,js}(.)' # note: not a tap                 [2013-02-08]
+alias -g  W='apps/{**/*.html,*/*/*/src/**/*.js}(.)' # note: not a tap [2013-02-08]
 alias -g  X='|tr -s " " "\t" |cut -f' # cut on tabs and spaces     [2002­04­27]
 #alias -g  Y='|tee /tmp/tee_output.txt'
 alias -g  Y='&>/dev/null &; disown' # fork process (`Y' is a fork) [2002­08­27]
