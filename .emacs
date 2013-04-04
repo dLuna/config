@@ -33,6 +33,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; load-path
 (add-to-list 'load-path "~/.emacs.d/erlang/")
+(add-to-list 'load-path "~/.emacs.d/vendor/")
 (add-to-list 'load-path "~/.emacs.d/vendor/hcoop/")
 (add-to-list 'load-path "~/Projects/otp/lib/tools/emacs/")
 (add-to-list 'load-path "~/usr/src/distel/elisp/")
@@ -210,9 +211,11 @@
 ;; erlang
 (add-to-list 'load-path "~/devel/otp/lib/tools/emacs")
 (autoload 'erlang-mode "erlang.el" "" t)
-(add-hook 'erlang-mode-hook (lambda ()
-                              (interactive)
-                              (column-marker-3 75)))
+(when (locate-library "column-marker")
+  (require 'column-marker)
+  (add-hook 'erlang-mode-hook (lambda ()
+                                (interactive)
+                                (column-marker-3 75))))
 (add-to-list 'auto-mode-alist '("\\.[eh]rl$" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.yaws$" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.app$" . erlang-mode))
@@ -445,6 +448,14 @@
 ;; jinja
 (autoload 'jinja-mode "jinja.el" "" t)
 (add-to-list 'auto-mode-alist '("\\.jinja$" . jinja-mode))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; tern
+(when (>= emacs-major-version 24)
+  (add-to-list 'load-path "~/.emacs.d/vendor/tern/emacs")
+  (autoload 'tern-mode "tern.el" "" t)
+  (when (locate-library "tern")
+    (add-hook 'js-mode-hook (lambda () (tern-mode t)))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; org-mode
