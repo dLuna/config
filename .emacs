@@ -32,12 +32,16 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; load-path
+;; erlang-templates
 (add-to-list 'load-path "~/.emacs.d/erlang/")
 (add-to-list 'load-path "~/.emacs.d/vendor/")
+;; git clone https://github.com/magit/magit.git
+(add-to-list 'load-path "~/.emacs.d/vendor/magit/")
+;; I have a local copy of these in the repo
 (add-to-list 'load-path "~/.emacs.d/vendor/hcoop/")
+;; erlang mode on the mac
 (add-to-list 'load-path "~/Projects/otp/lib/tools/emacs/")
 (add-to-list 'load-path "~/usr/src/distel/elisp/")
-(add-to-list 'load-path "~/usr/src/magit/")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Name and E-mail
