@@ -83,9 +83,10 @@
 ;; Scroll line by line.
 (setq scroll-conservatively 1)
 
-(setq gnus-button-url 'browse-url-generic
-      browse-url-generic-program "google-chrome"
-      browse-url-browser-function gnus-button-url)
+;; (setq gnus-button-url 'browse-url-generic
+;;       ;; browse-url-generic-program "google-chrome"
+;;       browse-url-generic-program "chromium-browser"
+;;       browse-url-browser-function gnus-button-url)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Completion
