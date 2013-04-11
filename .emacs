@@ -456,11 +456,11 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; tern
-(when (>= emacs-major-version 24)
-  (add-to-list 'load-path "~/.emacs.d/vendor/tern/emacs")
-  (autoload 'tern-mode "tern.el" "" t)
-  (when (locate-library "tern")
-    (add-hook 'js-mode-hook (lambda () (tern-mode t)))))
+;; (when (>= emacs-major-version 24)
+;;   (add-to-list 'load-path "~/.emacs.d/vendor/tern/emacs")
+;;   (autoload 'tern-mode "tern.el" "" t)
+;;   (when (locate-library "tern")
+;;     (add-hook 'js-mode-hook (lambda () (tern-mode t)))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; org-mode
