@@ -159,6 +159,20 @@
 (let ((f "~/.emacs.authinfo"))
   (when (file-exists-p f)
     (load-file f)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Useful stuff
+(defun count-buffers (&optional display-anyway)
+  "Display or return the number of buffers."
+  (interactive)
+  (let
+      (
+       (buf-count (length (buffer-list)))
+       )
+    (if (or (interactive-p) display-anyway)
+        (message "%d buffers in this Emacs" buf-count))
+    buf-count))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Emacs Modes:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
