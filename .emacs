@@ -445,14 +445,12 @@
                                      "#erlang"
                                      "#erlounge"
                                      "#hcoop"
-                                     ;; "#ratpoison"
+                                     "#ninenines"
+                                     "#rabbitmq"
                                      "#rcirc"
                                      "#rebar"
-                                     ;; "#riak"
                                      "#riak_core"
                                      "#spawnfest"
-                                     "#ninenines"
-                                     ;; "#upstart"
                                      )))))
 ;; /dim Erlang
 ;; /keyword hipe
