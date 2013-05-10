@@ -248,6 +248,7 @@
   (require 'distel)
   (distel-setup)
   (setq erl-nodename-cache 'smcore\@spawn)
+  (setq erlang-compile-extra-opts '(debug_info))
   (defvar *default-project-path* "~/devel/scalemail")
   (defun vc-git-inferior-erlang ()
     (interactive)
