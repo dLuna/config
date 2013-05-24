@@ -13,8 +13,9 @@
         alias = "!sh -c '[ $# -gt 1 ] && name=$1 && shift && git config --global alias.$name \"$*\" && exit 0 || echo \"usage: git alias <new alias> <original command>\" >&2 && exit 1' -"
         lol = log --graph --decorate --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
         lola = log --graph --decorate --abbrev-commit --date=relative --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
+        psuh = push
         pullr = pull --rebase
         statsu = status
-        psuh = push
+        stauts = status
         up = "!sh -c 'git stash && git pull --rebase && git stash pop'"
         who = shortlog -sen
