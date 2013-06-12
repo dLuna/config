@@ -450,6 +450,7 @@
                                      "#erlang"
                                      "#erlounge"
                                      "#hcoop"
+                                     "##javascript"
                                      "#ninenines"
                                      "#rabbitmq"
                                      "#rcirc"
