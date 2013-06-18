@@ -197,6 +197,12 @@
 (setq uniquify-ignore-buffers-re "^\\*")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Word count mode
+(when (locate-library "word-count")
+  (autoload 'word-count-mode "word-count" "Minor mode to count words." t nil)
+  (global-set-key "\M-+" 'word-count-mode))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Ace jump mode
 (add-to-list 'load-path "~/.emacs.d/vendor/ace-jump-mode")
 (when (locate-library "ace-jump-mode")
