@@ -453,6 +453,7 @@
   (setq rcirc-server-alist
     '(("irc.freenode.net" :channels (
                                      "#2040"
+                                     "#angularjs"
                                      "#erlang"
                                      "#erlounge"
                                      "#hcoop"
