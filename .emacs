@@ -308,6 +308,16 @@
 (global-set-key (kbd "C-M-c") 'camelscore-word-at-point)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; javascript
+(eval-after-load 'js
+  '(define-key js-mode-map "\C-c\C-k" 'refresh-js))
+
+(defun refresh-js ()
+  (interactive "Refresh js files in system")
+  (async-shell-command (format "cd %s && make js refresh_full"
+                               (vc-git-root default-directory))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; magit
 (when (locate-library "magit")
   (require 'magit)
