@@ -25,6 +25,8 @@
 ;; c <encoding> RET C-x C-w RET'.  You can force Emacs to read a file
 ;; in a specific encoding with 'C-x RET c C-x C-f'.
 
+;; M-= count words in region
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Load default.el first.
 (load "default" t t)
@@ -195,12 +197,6 @@
 (setq uniquify-separator "/")
 (setq uniquify-after-kill-buffer-p t) ;rename after killing uniquify
 (setq uniquify-ignore-buffers-re "^\\*")
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Word count mode
-;; (when (locate-library "word-count")
-;;   (autoload 'word-count-mode "word-count" "Minor mode to count words." t nil)
-;;   (global-set-key "\M-+" 'word-count-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Ace jump mode
