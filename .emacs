@@ -484,6 +484,7 @@
     '(("irc.freenode.net" :channels (
                                      "#2040"
                                      "#angularjs"
+                                     "#emacs"
                                      "#erlang"
                                      "#erlounge"
                                      "#hcoop"
