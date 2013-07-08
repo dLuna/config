@@ -313,9 +313,21 @@
   '(define-key js-mode-map "\C-c\C-k" 'refresh-js))
 
 (defun refresh-js ()
-  (interactive "Refresh js files in system")
-  (async-shell-command (format "cd %s && make js refresh_full"
-                               (vc-git-root default-directory))))
+  (interactive)
+  (save-window-excursion
+    (async-shell-command (format "cd %s && make js refresh_full"
+                                 (vc-git-root default-directory)))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; html
+(eval-after-load 'sgml-mode
+  '(define-key html-mode-map "\C-c\C-k" 'refresh-html))
+
+(defun refresh-html ()
+  (interactive)
+  (save-window-excursion
+    (async-shell-command (format "cd %s && make refresh_priv_full"
+                                 (vc-git-root default-directory)))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; magit
