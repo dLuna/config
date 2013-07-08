@@ -309,6 +309,18 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; javascript
+
+;; Research for hiding the buffer on success and showing it on failure.
+;; Obviously not yet completed...
+;; http://ericscrosson.wordpress.com/2013/03/08/burying-the-compilation-buffer/
+;; http://stackoverflow.com/questions/3572532/how-to-wait-for-capture-aysnchronous-shell-command-output-in-emacs-lisp
+;; http://www.emacswiki.org/emacs/ExecuteExternalCommand
+;; http://stackoverflow.com/questions/12083228/how-do-i-speed-up-emacs-output-from-an-asynchronous-shell-command
+;; http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/simple.el#n2447
+;; http://stackoverflow.com/questions/6915314/emacs-automatically-close-async-output-buffers-on-command-completion
+;; https://groups.google.com/forum/?fromgroups#!topic/gnu.emacs.help/TNqE7R7mULk
+;; http://www.marshut.com/mvhhi/how-to-suppress-avoid-async-shell-command-buffer.html
+
 (eval-after-load 'js
   '(define-key js-mode-map "\C-c\C-k" 'refresh-js))
 
