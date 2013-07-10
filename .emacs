@@ -443,6 +443,11 @@
 (add-to-list 'auto-mode-alist '("\\.migration$" . sql-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; sql
+(eval-after-load "sql"
+  '(sql-set-product 'postgres))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; jabber
 (when (locate-library "jabber")
   (require 'jabber-autoloads)
