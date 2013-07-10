@@ -320,6 +320,7 @@
 ;; http://stackoverflow.com/questions/6915314/emacs-automatically-close-async-output-buffers-on-command-completion
 ;; https://groups.google.com/forum/?fromgroups#!topic/gnu.emacs.help/TNqE7R7mULk
 ;; http://www.marshut.com/mvhhi/how-to-suppress-avoid-async-shell-command-buffer.html
+;; http://stackoverflow.com/questions/3569461/filtering-result-from-running-start-process-in-emacs-elisp
 
 (eval-after-load 'js
   '(define-key js-mode-map "\C-c\C-k" 'refresh-js))
