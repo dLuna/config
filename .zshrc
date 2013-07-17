@@ -17,6 +17,7 @@ setopt   complete_in_word
 setopt   list_packed
 unsetopt list_types
 setopt   mark_dirs
+source ~/.zsh/git-flow-completion.zsh
 
 # globbing
 unsetopt auto_menu
