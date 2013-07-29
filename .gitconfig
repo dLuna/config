@@ -17,5 +17,6 @@
         pullr = pull --rebase
         statsu = status
         stauts = status
+	tatus = status
         up = "!sh -c 'git stash && git pull --rebase && git stash pop'"
         who = shortlog -sen
