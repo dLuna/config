@@ -344,9 +344,9 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; magit
-(when (locate-library "magit")
-  (require 'magit)
-)
+;(when (locate-library "magit")
+;  (require 'magit)
+;)
 (defcustom git-grep-switches "-E -I -nH -i --no-color"
   "Switches to pass to `git grep'."
   :type 'string)
