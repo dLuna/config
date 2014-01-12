@@ -39,8 +39,8 @@
   '(& "%% $Id" ":$ " n))
 
 (setq erlang-skel-copyright-comment
-;;  '(& "%% @copyright " (format-time-string "%Y ") (user-full-name) n))
-  '(& "%% @copyright " (format-time-string "%Y ") "SiftLogic LLC" n))
+  '(& "%% @copyright " (format-time-string "%Y ") (user-full-name) n))
+;;  '(& "%% @copyright " (format-time-string "%Y ") "SiftLogic LLC" n))
 
 (setq erlang-skel-mail-address
       '"daniel@lunas.se")
