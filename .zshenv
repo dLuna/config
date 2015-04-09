@@ -33,7 +33,5 @@ export LESSCHARDEF='8bcccbcc13bc4b95.33b.'
 export LESSBINFMT='*s\%o'
 export JLESSKEYCHARSET='latin1'
 
-export CRACKLIB_DICTPATH=/var/cache/cracklib/cracklib_dict
-
 limit coredumpsize 0
 
