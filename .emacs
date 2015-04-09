@@ -186,7 +186,7 @@
 (setq iswitchb-regexp t)
 (if (>= emacs-major-version 21) (iswitchb-mode t))
 ;;(if (> emacs-major-version 21) (iswitchb-default-keybindings))
-(if (> emacs-major-version 20) (mouse-wheel-mode t))
+(if (fboundp 'mouse-wheel-mode) (mouse-wheel-mode t))
 (setq-default indent-tabs-mode nil)
 ;; (setq-default tab-width 4)
 (setq case-fold-search t) ; make searches case insensitive
