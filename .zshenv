@@ -14,7 +14,6 @@ export MANWIDTH=80
 export VISUAL='~/bin/emacs-nw'
 export EDITOR='~/bin/emacs-nw'
 export PAGER=less
-export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='41'
 
 # export ERL_COMPILER_OPTIONS='[{warn_format,2},compressed,debug_info]'
