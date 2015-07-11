@@ -1,10 +1,7 @@
 typeset -U path fpath manpath
-if [[ $(uname) == Darwin ]]; then
-    path=(~/devel/otp/bin ~/usr/bin /opt/local/bin /opt/local/sbin
-        /Applications/Emacs.app/Contents/MacOS/ $path)
-else
-    path=(~/devel/otp/bin ~/usr/bin ~/usr/RealPlayer $path)
-fi
+echo $path
+path=(~/devel/otp/bin ~/usr/bin $path)
+
 fpath=(~/.zsh $fpath)
 manpath=(~/usr/man $manpath)
 
@@ -33,5 +30,7 @@ export LESSCHARDEF='8bcccbcc13bc4b95.33b.'
 export LESSBINFMT='*s\%o'
 export JLESSKEYCHARSET='latin1'
 
-limit coredumpsize 0
+if [[ "${OSTYPE}" != cygwin ]]; then
+    limit coredumpsize 0
+fi
 
