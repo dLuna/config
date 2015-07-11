@@ -1,5 +1,4 @@
 typeset -U path fpath manpath
-echo $path
 path=(~/devel/otp/bin ~/usr/bin $path)
 
 fpath=(~/.zsh $fpath)
