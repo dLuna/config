@@ -84,7 +84,7 @@ if [[ $UID -eq 0 ]]; then                      # if root
 #elif [[ $TTY == /dev/pts/* ]]; then            # on remote terminal
 #    PROMPT=$'%{\e[34;47m%}'$PROMPT$'%{\e[0m%}' #   use blue/white prompt
 #    RPROMPT=$'%{\e[34;47m%}'$RPROMPT$'%{\e[0m%}'
-elif [[ $USERNAME != luna ]]; then            # if any other but luna
+elif [[ $HOST == deadpool(.*|) ]]; then        # if on deadpool
     PROMPT=$'%{\e[33m%}'$PROMPT$'%{\e[0m%}'    #   use yellow prompt
     RPROMPT=$'%{\e[33m%}'$RPROMPT$'%{\e[0m%}'  #
 fi                                             #
