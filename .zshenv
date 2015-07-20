@@ -1,5 +1,5 @@
 typeset -U path fpath manpath
-path=(~/devel/otp/bin ~/usr/bin $path)
+path=(~/devel/otp/bin /cygdrive/c/Program\ Files/erl7.0/bin /cygdrive/c/Users/luna/Dropbox/devel/rebar3 ~/usr/bin $path)
 
 fpath=(~/.zsh $fpath)
 manpath=(~/usr/man $manpath)
